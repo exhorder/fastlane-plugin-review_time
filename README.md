@@ -14,14 +14,24 @@ fastlane add_plugin review_time
 
 Fetches live iOS and macOS review times from appreviewtimes.com. For use in CI systems, Slack hooks, or whatever else you feel like.
 To get the current review time for iOS simply run:
-```
+```ruby
 review_time
 ```
 
 You can also fetch the review time for macOS by running:
+```ruby
+review_time(platform: "macos")
 ```
-review_time platform:macos
+
+Example use:
+```ruby
+lane :release do
+  gym
+  deliver
+  slack(message: "Submitted app update, expected review time is #{review_time} :rocket:")
+end
 ```
+
 ## Issues and Feedback
 
 For any other issues and feedback about this plugin, please submit it to this repository, or @timwredwards.
