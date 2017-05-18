@@ -12,7 +12,7 @@ fastlane add_plugin review_time
 
 ## About review_time
 
-Fetches live iOS and macOS review times from appreviewtimes.com, for use in CI systems and Slack hooks, or whatever else you feel like.
+Fetches live iOS and macOS review times from appreviewtimes.com. For use in CI systems, Slack hooks, or whatever else you feel like.
 To get the current review time for iOS simply run:
 ```
 review_time
