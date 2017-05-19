@@ -1,3 +1,3 @@
 lane :test do
-  review_time
+  UI.message(review_time)
 end
