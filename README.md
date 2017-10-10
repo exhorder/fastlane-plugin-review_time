@@ -28,7 +28,7 @@ Example use:
 lane :release do
   gym
   deliver
-  slack(message: "Submitted app update, expected review time is #{review_time} :rocket:")
+  slack(message: "Submitted app update, expected review time is #{review_time} days :rocket:")
 end
 ```
 
